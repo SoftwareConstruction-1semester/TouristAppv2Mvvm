@@ -1,0 +1,22 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TuristApp_v2._03"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModel="using:TuristApp_v2._03.ViewModel"
+    x:Class="TuristApp_v2._03.View.MainPage"
+    mc:Ignorable="d">
+
+    <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.DataContext>
+            <ViewModel:MainViewModel/>
+        </Grid.DataContext>
+
+        <Button Content="{Binding Event1, Mode=TwoWay}" HorizontalAlignment="Left" Margin="96,124,0,0" VerticalAlignment="Top" Height="81" Width="229" Click="Button_Click"/>
+        <Button Content="{Binding Event2}" HorizontalAlignment="Left" Margin="96,252,0,0" VerticalAlignment="Top" Height="71" Width="209" Click="Button_Click_1"/>
+        <Button Content="{Binding Event3}" HorizontalAlignment="Left" Margin="484,124,0,0" VerticalAlignment="Top" Height="81" Width="197" Click="Button_Click_2"/>
+        <Button Content="{Binding Event4}" HorizontalAlignment="Left" Margin="484,252,0,0" VerticalAlignment="Top" Height="71" Width="240" Click="Button_Click_3"/>
+
+    </Grid>
+</Page>
